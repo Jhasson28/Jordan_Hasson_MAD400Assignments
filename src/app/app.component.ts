@@ -12,4 +12,10 @@ import {Pokemon} from "../Models/Pokemon";
 })
 export class AppComponent {
   title = 'Jordan_Hasson_MyFirstAngularApplication';
+
+  pokemons = [
+    new Pokemon("Squirtle", "Water"),
+    new Pokemon("Zapdos", "Electric", "Tesla"),
+    new Pokemon("Tropius", "Grass/Flying", "Timber")
+  ]
 }
