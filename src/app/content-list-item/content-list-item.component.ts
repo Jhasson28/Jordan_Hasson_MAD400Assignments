@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Pokemon} from "../../Models/Pokemon";
 
 @Component({
   selector: 'app-content-list-item',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
   templateUrl: './content-list-item.component.html',
   styleUrl: './content-list-item.component.scss'
 })
-export class ContentListItemComponent {
+export class ContentListItemComponent implements OnInit{
+  @Input() pokemon?: Pokemon;
+  constructor() {
+  }
+    ngOnInit(): void {
+
+    }
 
 }
