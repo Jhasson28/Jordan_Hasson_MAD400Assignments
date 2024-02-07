@@ -1,13 +1,15 @@
 import {Component, OnInit} from '@angular/core';
 import {ContentListItemComponent} from "../content-list-item/content-list-item.component";
 import {Pokemon} from "../../Models/Pokemon";
+import {NgForOf} from "@angular/common";
 
 
 @Component({
   selector: 'app-content-list',
   standalone: true,
   imports: [
-    ContentListItemComponent
+    ContentListItemComponent,
+    NgForOf
   ],
   templateUrl: './content-list.component.html',
   styleUrl: './content-list.component.scss'

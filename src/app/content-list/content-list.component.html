@@ -1,4 +1,11 @@
-<app-content-list-item *ngFor="let item of pokemonList; index as i"> </app-content-list-item>
+
+  <app-content-list-item *ngFor="let pokemon of pokemonList; even as even;"
+                         [contentPokemon]="pokemon"
+                         [class]="{even: even}">
+  </app-content-list-item>
+
+
+
 
 
 
