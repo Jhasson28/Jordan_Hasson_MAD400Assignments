@@ -13,44 +13,22 @@ import {Pokemon} from "../../Models/Pokemon";
   styleUrl: './content-list.component.scss'
 })
 export class ContentListComponent implements OnInit{
-  pokemon?: Pokemon;
+  pokemonList = [
+    new Pokemon("JigglyPuff", "Fairy", 29),
+    new Pokemon("Lugia", "Flying/Psychic", 100),
+    new Pokemon ("Miltank", "Normal", 45),
+    new Pokemon("Spoink", "Psychic", 14)
+  ]
 
   constructor() {
 
-  }
-  ngOnInit() {
-    let pokemonList = [
-      this.pokemon = {
-        pokemonName: "Jigglypuff",
-        pokemonLvl: 24,
-        pokemonType: "Fairy"
-      },
-      this.pokemon = {
-        pokemonName: "Ledyba",
-        pokemonLvl: 6,
-        pokemonType: "Bug"
-      },
-      this.pokemon = {
-        pokemonName: "Houndoom",
-        pokemonLvl: 56,
-        pokemonType: "Dark/Fire"
-      },
-      this.pokemon = {
-        pokemonName: "Lugia",
-        pokemonLvl: 100,
-        pokemonType: "Flying/Psychic"
-      }
 
-    ]
+    }ngOnInit(): void {
+        throw new Error('Method not implemented.');
+    }
+;
 
-  }
+}
 
-  private InitializeValues (): void {
-
-  }
-
-  private LoadData (): void {
-
-  }
-
+class ContentListComponentImpl extends ContentListComponent {
 }
