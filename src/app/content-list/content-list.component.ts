@@ -15,7 +15,7 @@ import {NgForOf} from "@angular/common";
   styleUrl: './content-list.component.scss'
 })
 export class ContentListComponent implements OnInit{
- 
+
 
   constructor() {
 

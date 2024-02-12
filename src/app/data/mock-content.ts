@@ -1,4 +1,4 @@
-import {Pokemon} from "../Models/Pokemon";
+import {Pokemon} from "../../Models/Pokemon";
 
 pokemonList = [
   new Pokemon("JigglyPuff", "Fairy", 29),
